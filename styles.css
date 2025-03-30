@@ -2,3 +2,62 @@
   background-color: #D5FFFF;
 }
 
+.wrap {
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrap > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+@media all and (min-width: 600px) {
+  .project{flex: 1 0 0;}
+}
+
+@media all and (min-width: 800px){
+  .project {flex: 3 0px;}
+  .project1 {order: 1}
+  .project2 {order: 2}
+  .footer {order: 3}
+}
+
+.project1 {
+  background-color: red;
+}
+
+.project2 {
+  background-color: yellow;
+}
+
+.footer{
+  background-color: green;
+}
+
+.header{
+  background-color: blueviolet;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Button to email me  */ 
+.btn {
+  background-color: white;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 5000px;
+  transition: all 0.5s;
+ 
+}
+
+.btn:hover{
+  transform: scale(1.15);
+}
